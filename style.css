@@ -1,0 +1,9 @@
+#map {
+    height: 40%;
+    width: 40%;
+    background: #dddd;
+}
+body{
+    width: 100vw;
+    height: 200vh;
+}
