@@ -1,4 +1,7 @@
 function initMap() {
+  /**
+ * [Criação do map no site ...]
+ */
   
   var options = 
   {
@@ -11,6 +14,10 @@ function initMap() {
 };
 
 function addMarker(property){
+  /**
+ * [Marcador de localização correspondente a lat e lng]
+ * @param  {[object]} foo [{location:{lat: float da latitude, lng: float da longitude}}]
+ */
 
   const marker = new google.maps.Marker({
     position: property.location,
