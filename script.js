@@ -53,5 +53,19 @@ function eventsmarker(objmarker){
     map.setZoom(18);
     map.setCenter(objmarker.getPosition());
   });
+
+  const info = new google.maps.InfoWindow({
+    content: '<img src="https://lh3.googleusercontent.com/-hE62a2MBuV8/AAAAAAAAAAI/AAAAAAAAAAA/7ns0Ff2Gun4/s44-p-k-no-ns-nd/photo.jpg" width=80px; style="visibility: visiblie;"><br>Centro de Tecnologia de Informação e Comunicação do Estado do Rio de Janeiro.<br><strong>https://www.proderj.rj.gov.br/</strong><br><a href="">(21) 2333-0239</a>',
+  });
+  
+  objmarker.addListener("mouseover", () => {
+    info.open(map, objmarker);
+  });
+
+  objmarker.addListener("mouseout", () => {
+    info.close();
+  });
 };
 
+
+ 
